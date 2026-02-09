@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #cb255c;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: #ffb6c1;
+  font-size: 60px;
+  margin-top: 40px;
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.message {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 18px;
+  color: rgb(180, 163, 172);
+}
+
+.teddy-bear {
+  width: 250px;
+  margin-top: 40;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffc0cb, 0 0 10px #ffc0cb;
+  }
+  to {
+    text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
